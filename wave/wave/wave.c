@@ -36,6 +36,7 @@ int WaveInitFromFile(char *filepath, WAVE *w) {
     w->file = fopen(filepath, "rb");
     if (w->file == NULL){
         printf("ERROR opening %s\n", filepath);
+        exit(1);
     }
     
     // Walk through wav file, find fmt shunk

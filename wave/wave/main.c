@@ -45,7 +45,6 @@ int main(int argc, const char * argv[]) {
         if (samples_left == 0)
             break;
     }
-//    printf("ready to exit\n");
     
     WaveClose(&w);
     WaveClose(&w_);
